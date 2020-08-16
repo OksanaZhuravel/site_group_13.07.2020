@@ -1,0 +1,46 @@
+.content-score {
+	width: @width;
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+}
+
+.score {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	width: 140px;
+	height: 171px;
+	padding: 10px 30px 0 10px;
+	&:after {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #ffffff;
+	}
+	&-icon {
+		fill: #c7b299;
+		margin: 0 0 30px 0;
+	}
+	&-title {
+		min-width: 115px;
+		display: block;
+		.mixs (montserrat, 48px, 36px, 200, #ffffff);
+		margin: 0 0 20px 0;
+	}
+	&-txt {
+		min-width: 135px;
+		margin: 0 0 30px 0;
+		display: block;
+		.mixs (montserrat, 14px, 20px, 300, #c7b299);
+		text-transform: uppercase;
+	}
+}

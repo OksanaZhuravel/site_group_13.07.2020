@@ -1,0 +1,64 @@
+                        .main {
+                            width: 100%;
+                            /* min-height: 5327px;*/
+                        }
+
+                        .content-features {
+                            width: 100%;
+                            min-height: 373px;
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            background-color: #ffffff;
+
+                        }
+
+                        .features {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 300px;
+                            padding: 10px 0px 10px 15px;
+                            box-sizing: border-box;
+                            &:after {
+                                content: "";
+                                display: block;
+                                width: 70px;
+                                height: 3px;
+                                background-color: #555555;
+                            }
+                            &:hover .features-icon {
+                                fill: #c7b299;
+                            }
+                            &:hover .features-title {
+                                color: #c7b299;
+                            }
+                            &:hover:after {
+                                background-color: #c7b299;
+                            }
+                             &:active .features-icon {
+                                fill: #9299a9;
+                            }
+                            &:active .features-title {
+                                color: #9299a9;
+                            }
+                            &:active:after {
+                                background-color: #9299a9;
+                            }
+                            &-icon {
+                                display: block;
+                                fill: #555555;
+                                margin: 0 0 20px 0;
+                            }
+                            &-title {
+                                width: 100%;
+                                margin: 0 0 10px 0;
+                                text-align: center;
+                                .mixs (raleway, 22px, 1.2, 600, #555555);
+                            }
+                            &-txt {
+                                text-align: center;
+                                .mixs (montserrat, 14px, 24px, 300, #8c8c8c);
+                            }
+                        }

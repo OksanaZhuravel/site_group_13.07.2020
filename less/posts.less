@@ -1,0 +1,140 @@
+.posts {
+	width: @width;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 82px 0px 80px 0px;
+	background-color: #ffffff;
+	&-heading {
+		margin: 0 0 30px 0;
+		width: 100%;
+		.mixs (raleway, 30px, 1.2, 600, #555555);
+		&-text {
+			margin: 0 0 40px 0;
+			display: block;
+			max-width: 780px;
+			.mixs (montserrat, 16px, 28px, 300, #8c8c8c);
+			word-break: break-all;
+		}
+	}
+	&-article {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	&-wrp {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		text-align: left;
+		width: 370px;
+		height: 395px;
+		margin: 0 15px 40px 15px;
+		position: relative;
+		&:hover .posts-data-day {
+			background-color: #c7b299;
+		}
+		&:hover .posts-data-months {
+			background-color: #a48d72;
+		}
+		&:hover {
+			background-color: #362f2d;
+		}
+		&:active .posts-data-day {
+			background-color: #9299a9;
+		}
+		&:active .posts-data-months {
+			background-color: #9299a9;
+		}
+		&:active {
+			background-color: #9299a9;
+		}
+	}
+	&-data {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		padding: 10px 0 10px 0;
+		text-align: center;
+		&-day {
+			display: block;
+			width: 50px;
+			height: 35px;
+			background-color: #363636;
+			border-radius: 3px 3px 0px 0px;
+			.mixs (montserrat, 24px, normal, 300, #ffffff);
+		}
+		&-months {
+			display: block;
+			width: 50px;
+			height: 25px;
+			background-color: #252525;
+			border-radius: 0px 0px 3px 3px;
+			.mixs (roboto, 12px, 20px, 400, #ffffff);
+		}
+	}
+}
+
+.posts-article-photo {
+	display: block;
+	margin: 0 0 30px 0;
+	/*width: 100%;*/
+}
+
+.posts-article-wrapper {
+	width: 100%;
+	margin: 0 0 40px 30px;
+}
+
+.posts-article {
+	&-title {
+		display: block;
+		.mixs (raleway, 20px, 1.2, 500, #555555);
+		margin: 0 0 20px 0;
+	}
+	&-txt {
+		display: block;
+		.mixs (montserrat, 14px, 22px, 300, #8c8c8c);
+		margin: 0 0 27px 0;
+	}
+	&-link {
+		.mixs (montserrat, 14px, 20px, 300, #c7b299);
+		text-decoration: none;
+		position: relative;
+		&:hover {
+			color: #ffffff;
+		}
+		&:active {
+			color: #a48d72;
+		}
+		&::after {
+			content: "";
+			border: 4px solid transparent;
+			border-left: 3px solid #c7b299;
+			box-sizing: border-box;
+			position: absolute;
+			top: 5.5px;
+			left: 83px;
+		}
+	}
+}
+
+.posts-btn-link {
+	display: block;
+	border: none;
+	background-color: #ffffff;
+}
+
+.posts-btn {
+	fill: #d1d1d1;
+	&:hover {
+		fill: #c7b299;
+	}
+	&:active {
+		fill: blue;
+	}
+}

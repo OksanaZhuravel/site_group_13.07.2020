@@ -1,0 +1,28 @@
+.photo {
+	width: @width;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center;*/
+	align-items: center;
+	&-heading {
+		text-align: center;
+		width: 100%;
+		.mixs (raleway, 30px, 1.2, 600, #555555);
+		margin: 83px 0 20px 110px;
+		&-text {
+			width: 800px;
+			margin: 0 0 40px 100px;
+			text-align: center;
+			.mixs (montserrat, 16px, 28px, 300, #8c8c8c);
+		}
+	}
+	&-multi {
+		width: 100%;
+		min-height: 482px;
+		background-image: url("../img/browser_center_10768.jpg"), url("../img/browser_left_10769.jpg"), url("../img/browser_right_10770.jpg");
+		background-size: 770px 482px, 770px 400px, 770px 400px;
+		background-repeat: no-repeat;
+		background-position: center bottom, bottom 0 left 346px, bottom 0 right 344px;
+	}
+}
